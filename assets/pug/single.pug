@@ -1,0 +1,22 @@
+extends _layout-full
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'Single book'}
+block content_block
+	section.single 
+		.section_in 
+			.single_main_w 
+				.single_main_head 
+					h1 “Практика оздоровления, омоложения и долголетия”
+				.single_page_list 
+					ul 
+						-for(i = 0; i < 10; i++)
+							li 
+								img(src=`i/book/book_${i}.jpg`, alt="")
+	section.action 
+		.section_in 
+			+action({
+				btn: 'перейти к оплате',
+				title: 'Закажите полную версию книги за 2000 руб.',
+				theme: 'dark'
+			})

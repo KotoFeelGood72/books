@@ -1,0 +1,20 @@
+extends _layout-full
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'Contacts'}
+block content_block
+	section.contacts 
+		.section_in 
+			.contacts_main 
+				.contacts_title 
+					h1 Контакты
+				ul.contacts_list 
+					li 
+						p Телефон
+						span!='<a href="#" target="_blank">+7 000 000 00 00</a>'
+					li 
+						p Почта
+						span!='<a href="#" target="_blank">mail@mail.ru</a>'
+					li 
+						p Реквизиты
+						span!='Место для реквизитов </br>-</br>-</br>-'

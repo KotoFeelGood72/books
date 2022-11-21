@@ -1,0 +1,20 @@
+extends _layout
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'HOME'}
+block content_block
+	section.hero 
+		.section_in 
+			.hero_main_w 
+				.hero_main_book 
+					img(src="i/book.png", alt="")
+				.hero_content 
+					.hero_content_head 
+						h1 Библия долголетия
+						p Подзаголовок для сайта
+					.hero_content_main 
+						nav.hero_nav 
+							ul 
+								each item in ['Книга “Практика оздоровления, омоложения и долголетия”', 'Книга “Практика отказа от курения”', 'Инвестиции и анонсы', 'Контакты']
+									li 
+										a(href="/single.html" class="btn")=item 

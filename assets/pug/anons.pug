@@ -1,0 +1,53 @@
+extends _layout-full
+
+block vars
+	- array = {body_class:'', layout_mod:'', sub_keywords:'', title_inner:'Anons'}
+block content_block
+	section.anons 
+		.section_in 
+			.anons_main_W 
+				.anons_head 
+					h1 Другие книги автора
+					p Здесь собраны все книги автора, в том числе ещё не выпущенные
+				.anons_main 
+					ul.anons_list
+						-for(i = 0; i < 4; i++)
+							- var label = ['Доступно', 'Доступно', 'В процессе', 'Доступно']
+								if i === 2
+									li.anons_item 
+										article
+											a(href="#")
+												.anons_item_img
+													.anons_item_label.proccesing
+														p=label[i]
+													img(src="i/anons.jpg", alt="")
+												.anons_item_content 
+													h3 Библия долголетия
+													.anons_item_txt 
+														p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+								else 
+									li.anons_item 
+										article
+											a(href="#")
+												.anons_item_img
+													.anons_item_label 
+														p=label[i]
+													img(src="i/anons.jpg", alt="")
+												.anons_item_content 
+													h3 Библия долголетия
+													.anons_item_txt.global_txt_block 
+														p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+	section.invest 
+		.section_in 
+			.invest_main 
+				.invest_content
+					.invest_title 
+						h2 Инвестиции в проект
+					.invest_content_txt.global_txt_block 
+						p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla impedit dolorem, repellendus illo consectetur consequuntur tempora debitis fuga autem magnam, maxime minima nobis iste, eius libero placeat. Exercitationem, nemo distinctio.Fugiat numquam voluptatibus tenetur dolore quaerat repudiandae, est, pariatur illo exercitationem commodi molestiae enim praesentium accusantium magni quo fugit. Est distinctio cum ea accusamus tempora laudantium, sapiente nihil? At, quia!
+						p Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium laboriosam quam ullam illum, modi odio distinctio minima rem, sint officia consequuntur soluta. Eum pariatur molestias repudiandae esse repellat illum autem!
+				.invest_form_w 
+					+action({
+						btn: 'Отправить',
+					})

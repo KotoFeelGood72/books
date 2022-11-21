@@ -1,0 +1,19 @@
+footer.footer 
+		.footer_row 
+			.section_in 
+				.footer_row_top 
+					nav.footer_nav_top 
+						ul 
+							each item in ['Книга “Практика оздоровления, омоложения и долголетия”', 'Книга “Практика отказа от курения”', 'Инвестиции и анонсы', 'Контакты']
+								li 
+									a(href="#")=item
+		.footer_bottom 
+			.section_in 
+				.footer_bottom_main 
+					.footer_copy © Все права защищены, 2022
+					ul.footer_other_list 
+						each item in ['О возврате средств', 'Публичная оферта', 'Политика конфиденциальности']
+							li 
+								a(href="#")=item 
+					.footer_payment 
+						img(src="i/payment.png", alt="")

@@ -1,0 +1,18 @@
+mixin action(data)
+	.action_main(class=data.theme) 
+		.action_head
+			if data.title 
+				.action_title 
+					h2=data.title
+		.action_form_w 
+			form(action="").action_form
+				.action_input 
+					input(type="text" placeholder="Ваше имя") 
+				.action_input 
+					input(type="tel" placeholder="Ваш телефон")
+				.action_input 
+					input(type="text" placeholder="Ваш e-mail")
+				.action_check 
+					p!='Отправляя форму, вы соглашаетесь с <a href="#" target="_blank">политикой конфиденциальности</a>'
+				.action_btn 
+					button(type="submit")=data.btn

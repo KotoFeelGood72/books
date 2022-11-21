@@ -1,0 +1,129 @@
+.action {
+}
+.section_in {
+}
+.action_main {
+	text-align: center;
+	.action_input {
+		margin-bottom: 2.5rem;
+		@include bp($point_2) {
+			margin-bottom: 1rem;
+		}
+		input {
+			@include app;
+			font-family: $font_1;
+			color: $white;
+			border: .1rem solid #3E393266;
+			padding: 2.2rem 3rem;
+			width: 100%;
+			font-weight: 400;
+			@include bp($point_2) {
+				padding: 1.5rem 2rem;
+				font-size: 1.6rem;
+			}
+		 }
+	}
+	&.dark {
+		background-color: #3E3932;
+		color: $white;
+		max-width: 75.5rem;
+		margin: 0 auto 13rem auto;
+		padding: 6rem 9.5rem 7.3rem 9.5rem;
+		@include bp($point_2) {
+			padding: 2rem;
+		}
+
+		.action_check {
+			p {
+				color: $white;
+				a {
+					color: $white;
+					border-bottom: .1rem solid $white;
+				}
+			}
+}
+
+		.action_input {
+			margin-bottom: 2.5rem;
+			@include bp($point_2) {
+				margin-bottom: 1rem;
+			}
+			input {
+				border: .1rem solid #FFFFFF4D;
+				&::-webkit-input-placeholder {
+					color: $white;
+					opacity: .7;
+				}
+				&:-ms-input-placeholder {
+					color: $white;
+					opacity: .7;
+				}
+ 			}
+		}
+
+		.action_title {
+			h2 {
+				font-size: 3.5rem;
+				font-family: $font_1;
+				line-height: 5.4rem;
+				color: $white;
+				font-weight: 400;
+				max-width: 39.6rem;
+				margin: 0 auto 3rem auto;
+				@include bp($point_2){
+					font-size: 2.6rem;
+					line-height: 3.6rem;
+				}
+			}
+		}
+	}
+}
+.dark {
+}
+.action_head {
+}
+.action_title {
+}
+.action_form_w {
+}
+.action_form {
+}
+
+.action_check {
+	margin-bottom: 4rem;
+	@include bp($point_2) {
+		text-align: left;
+	}
+	p {
+		font-size: 1.7rem;
+		color: $dark;
+		@include bp($point_2) {
+			font-size: 1.2rem;
+		}
+		a {
+			color: $dark;
+			border-bottom: .1rem solid $dark;
+			display: inline-flex;
+			transition: all .3s ease;
+			&:hover {
+				border-bottom: .1rem solid transparent;
+
+			}
+		}
+	}
+}
+.action_btn {
+	button {
+		@include app;
+		color: #3E3932;
+		text-transform: uppercase;
+		font-family: $font_2;
+		background-color: #FFC771;
+		padding: 2.3rem 5rem;
+		width: 100%;
+		line-height: 2.7rem;
+		@include bp($point_2) {
+			padding: 1.5rem 2rem;
+		}
+	}
+}

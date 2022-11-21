@@ -1,0 +1,127 @@
+.footer {
+	width: 100%;
+	min-height: $footer;
+	flex: 0 0 auto;
+	will-change: transform;
+	position: relative;
+	@include bp($point_2) {
+		min-height: $footer_mob;
+	}
+}
+
+.footer {
+}
+.footer_row {
+}
+.section_in {
+}
+.footer_row_top {
+	padding: 3rem 0;
+}
+.footer_nav_top {
+	ul {
+		@include flex-start;
+		@include bp($point_2) {
+			flex-wrap: wrap;
+		}
+		li {
+			a {
+				font-size: 1.8rem;
+				line-height: 2rem;
+				@include bp($point_2) {
+
+				}
+			}
+			&:not(:last-child)  {
+				padding-right: 4.6rem;
+				margin-right: 4.7rem;
+				border-right: 1px solid rgba(62, 57, 50, 0.2);
+				@include bp($point_2) {
+					border: none;
+					margin-right: 1rem;
+					padding-right: 0;
+					margin-bottom: 1rem;
+				}
+			}
+			&:last-child {
+				@include bp($point_2) {
+					margin-bottom: 1rem;
+				}
+			}
+ 		}
+	}
+}
+.footer_bottom {
+	background-color: #3E3932;
+	color: $white;
+	font-size: 1.8rem;
+	a {
+		color: $white
+	}
+}
+.footer_bottom_main {
+	@include flex-space;
+	padding: 2.1rem 0;
+	@include bp($point_2) {
+		flex-direction: column;
+	}
+}
+.footer_copy {
+	margin-right: 18.1rem;
+	@include bp($point_2) {
+		margin-right: 0;
+		order: 5
+	}
+}
+.footer_other_list {
+	@include flex-start;
+	margin-right: 18.2rem;
+	@include bp($point_2) {
+		margin-right: 0;
+		flex-direction: column;
+		order: 2;
+		text-align: center;
+		margin-bottom: 3rem;
+	}
+	li {
+		a {
+			border-bottom: .1rem solid $white;
+			transition: all .3s ease;
+			display: flex;
+			font-size: 1.8rem;
+			line-height: 2rem;
+			&:hover {
+				border-color: transparent;
+			}
+		}
+		&:not(:last-child) {
+			margin-right: 7.1rem;
+			@include bp($point_2) {
+				margin: 0 0 1rem 0;
+			}
+		}
+	}
+}
+.footer_payment {
+	width: 12rem;
+	@include flex-center;
+	@include bp($point_2) {
+		margin-bottom: 2rem;
+	}
+}
+
+.topLink {
+	position: fixed;
+	width: 5.2rem;
+	height: 5.2rem;
+	bottom: 8.5rem;
+	right: 4rem;
+	display: none;
+	a {
+		@include flex-center;
+		width: 100%;
+		height: 100%;
+		background-color: #3E3932;
+		color: $white;
+	}
+}
